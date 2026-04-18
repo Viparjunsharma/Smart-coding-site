@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>💻 CodeHub</h2>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="contest.html">Contest</a>
+    <a href="profile.html">Profile</a>
+</div>
+
+<div class="main">
+<div class="card">
+
+<h1>⚔️ Coding Contest</h1>
+<p>Find sum of [2,4,6]</p>
+
+<input type="text" id="ans">
+<button onclick="check()">Submit</button>
+
+<p id="res"></p>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+function check(){
+let a = document.getElementById("ans").value;
+document.getElementById("res").innerText = (a=="12") ? "Correct" : "Wrong";
+}
+</script>
+
+</body>
+</html>

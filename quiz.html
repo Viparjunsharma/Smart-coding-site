@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>💻 CodeHub</h2>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="contest.html">Contest</a>
+    <a href="profile.html">Profile</a>
+</div>
+
+<div class="main">
+<div class="card">
+
+<h2>Enter Name</h2>
+<input type="text" id="username">
+<button onclick="startQuiz()">Start</button>
+
+<div id="quizBox" style="display:none;">
+<h3 id="question"></h3>
+<div id="options"></div>
+<p id="result"></p>
+<button onclick="nextQuestion()">Next</button>
+</div>
+
+<h2>Score: <span id="score">0</span></h2>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

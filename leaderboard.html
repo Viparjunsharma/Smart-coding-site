@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leaderboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>💻 CodeHub</h2>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="contest.html">Contest</a>
+    <a href="profile.html">Profile</a>
+</div>
+
+<div class="main">
+<div class="card">
+
+<h1>🏆 Leaderboard</h1>
+<ul id="leaders"></ul>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+let scores = JSON.parse(localStorage.getItem("scores")) || [];
+scores.sort((a,b)=>b.score-a.score);
+
+let html = "";
+scores.forEach((s,i)=>{
+    html += `<li>${i+1}. ${s.name} - ${s.score}</li>`;
+});
+document.getElementById("leaders").innerHTML = html;
+</script>
+
+</body>
+</html>
