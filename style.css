@@ -148,3 +148,53 @@ li {
         transform: translateY(0);
     }
 }
+/* 🌙 DARK MODE */
+.dark {
+    background: #0f172a !important;
+    color: white;
+}
+
+.dark .card {
+    background: #1e293b;
+    color: white;
+}
+
+.dark .sidebar {
+    background: #020617;
+}
+
+/* ACTIVE SIDEBAR */
+.sidebar a.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* LOADER */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    z-index: 9999;
+}
+
+/* QUIZ SELECT */
+.option.selected {
+    background: #3b82f6;
+    color: white;
+}
+
+.option.correct {
+    background: #22c55e;
+    color: white;
+}
+
+.option.wrong {
+    background: #ef4444;
+    color: white;
+}
